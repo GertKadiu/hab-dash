@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap");
+    </style>
+    <title>hab+dash</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <!-- Banner -->
+    <div id="banner" class="banner">
+      Use this banner to advertise a special promotion—20% off!
+    </div>
+    <!-- NavBar -->
+     <header class="navbar">
+       
+          <div class="navCtn">
+        <div class="nav-left">
+            <div>Stitch Rewards</div>
+            <div>quick order</div>
+            <div class="imgCtnHeader">
+                <img src="./Images/Symbol.svg"/>
+              <a href="#RetailLocator">Store Locator</a>  
+            </div>
+            
+        </div>
+        <div class="nav-right">
+            <div class="cart">Cart</div>
+            <div>Sign up</div>
+            <div>Log in</div>
+            <img alt="searchIcon" src="./Images/SVG.png"/>
+          </div>
+          </div>
+        
+               
+        <div class="secondHeader">
+            <img src="./Images/logo.png (1).png" alt="logoImgHeader" class="logoImgHeader" />
+            <div class="collapsCtn">
+              <input type="checkbox" id="menu-toggle-1" class="menu-checkbox" />
+              <label for="menu-toggle-1" class="menu-label">Top Thread<span class="menu-icon"><img alt="arrow" src="./Images/caret-down-fill.png" style="vertical-align:middle;"/></span></label>
+              <nav>
+                <a href="#">Top Thread</a>
+                <a href="#">Bobbins</a>
+                <a href="#">Stabilizer</a>
+                <a href="#">Displays</a>
+                <a href="#">Notions</a>
+              </nav>
+            </div>
+            <div class="collapsCtn">
+              <input type="checkbox" id="menu-toggle-2" class="menu-checkbox" />
+              <label for="menu-toggle-2" class="menu-label">Bobbins<span class="menu-icon"><img alt="arrow" src="./Images/caret-down-fill.png" style="vertical-align:middle;"/></span></label>
+              <nav>
+                <a href="#">Top Thread</a>
+                <a href="#">Bobbins</a>
+                <a href="#">Stabilizer</a>
+                <a href="#">Displays</a>
+                <a href="#">Notions</a>
+              </nav>
+            </div>
+            <div class="collapsCtn">
+              <input type="checkbox" id="menu-toggle-3" class="menu-checkbox" />
+              <label for="menu-toggle-3" class="menu-label">Stabilizer<span class="menu-icon"><img alt="arrow" src="./Images/caret-down-fill.png" style="vertical-align:middle;"/></span></label>
+              <nav>
+                <a href="#">Top Thread</a>
+                <a href="#">Bobbins</a>
+                <a href="#">Stabilizer</a>
+                <a href="#">Displays</a>
+                <a href="#">Notions</a>
+              </nav>
+            </div>
+            <div class="collapsCtn">
+              <input type="checkbox" id="menu-toggle-4" class="menu-checkbox" />
+              <label for="menu-toggle-4" class="menu-label">Displays<span class="menu-icon"><img alt="arrow" src="./Images/caret-down-fill.png" style="vertical-align:middle;"/></span></label>
+              <nav>
+                <a href="#">Top Thread</a>
+                <a href="#">Bobbins</a>
+                <a href="#">Stabilizer</a>
+                <a href="#">Displays</a>
+                <a href="#">Notions</a>
+              </nav>
+            </div>
+            <div class="collapsCtn">
+              <input type="checkbox" id="menu-toggle-5" class="menu-checkbox" />
+              <label for="menu-toggle-5" class="menu-label">Notions<span class="menu-icon"><img alt="arrow" src="./Images/caret-down-fill.png" style="vertical-align:middle;"/></span></label>
+              <nav>
+                <a href="#">Top Thread</a>
+                <a href="#">Bobbins</a>
+                <a href="#">Stabilizer</a>
+                <a href="#">Displays</a>
+                <a href="#">Notions</a>
+              </nav>
+            </div>
+          </div>
+     </header>
+     <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+         <div>
+            
+         </div>
+        <div class="topnav">
+          <a href="#home" class="active"><img alt="menu" src="./Images/logo.png.png" /></a>
+          <div id="myLinks">
+            <a href="#stitch_rewards">Stitch Rewards</a>
+            <a href="#quick_order">Quick Order</a>
+            <a href="#store_locator">Store Locator</a>
+            <a href="#cart">Cart</a>
+            <a href="#sign_up">Sign Up</a>
+            <a href="#log_in">Log In</a>
+            <a href="#top_thread">Top Thread</a>
+            <a href="#bobbins">Bobbins</a>
+            <a href="#stabilizer">Stabilizer</a>
+            <a href="#displays">Displays</a>
+            <a href="#notions">Notions</a>            
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        </div>
+        
+    <!-- HeroSection -->
+    <section id="main">
+      <div class="heroSection" id="heroSection">
+        <p class="heroSectionTitle" id="heroSectionTitle">
+          Add color to your masterpiece
+        </p>
+        <button class="primaryButton" type="button">Shop Now</button>
+      </div>
+     <!-- Carousel -->
+<!-- Carousel -->
+<div class="carousel">
+    <div class="controllers">
+      <img id="prev-btn" alt="before" src="./Images/__before.png" />
+      <img id="next-btn" alt="after" src="./Images/after.png" />
+    </div>
+    <div id="carousel-items" class="carousel-items"></div>
+  </div>
+    </section>
+
+    <!-- RetailLocator -->
+     <section class="storeLocatorCnt" id="RetailLocator">
+      <div class="storeLocator">
+        <p class="title">Retail Store Locator</p>
+        <p class="description">Buy our products in more than 600 retail stores worldwide</p>
+        <button class="primarySmaller">Search retail store</button>
+      </div>
+      <div class="map">
+        <img src="./Images/BlankMap-World_gray 1.png" alt="store map" style="width: 100%;" />
+      </div>
+     </section>
+
+    <!-- Featured Products -->
+     <section id="featuredProducts" class="featuredProducts">
+        <p class="featuredTitle">EMBROIDERY STABILIZER</p>
+        <div class="productCtn">
+            <div>
+                <div class="imageCtn">
+                <img alt="productImg" class="productImg" src="./Images/image 5.png" class="featureImg"/>
+            </div>
+                <p class="productName">Product Name</p>
+            </div>
+            <div>
+                <div class="imageCtn">
+                    <img alt="productImg" class="productImg" src="./Images/image 5 (1).png" class="featureImg" />
+            </div>
+            <p class="productName">Product Name</p>
+            </div>
+            <div>
+                <div class="imageCtn">
+                    <img alt="productImg" class="productImg" src="./Images/image 5 (2).png" class="featureImg" />
+                </div>   
+                <p class="productName">Product Name</p>
+            </div>
+            <div>
+                <div class="imageCtn">
+                    <img alt="productImg" class="productImg" src="./Images/image 5 (2).png" class="featureImg" />
+                </div>
+                <p class="productName">Product Name</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Testimonials -->
+      <section id="testimonials" class="testimonials">
+        <p class="testimonialsTitle">Testimonials</p>
+        <p class="testimonialsDescription">As a machine quilter, I love the sheen of Glide and how it adds an extra special touch to my quilts. It's the perfect blend of beauty and
+            strength. Not only do I love the thread, but I love working with Hab+Dash to bring out the best in my quilting. They have been an
+            integral part of our Free Motion Quilting Challenges and helped meet our thread needs each time.</p>
+            <p class="testimonialName">-Angela Walters-</p>
+            <div class="testimonialsControllers">
+                <img alt="before" class="testimonialImg" src="./Images/__before.png" />
+                <p class="counter">1/10</p>
+                <img alt="after" class="testimonialImg" src="./Images/after.png" />
+              </div>
+      </section>
+
+      <!-- Footer -->
+       <footer id="footer" class="footer">
+        <div class="footerCtn">
+             <div>
+            <img alt="logo" src="./Images/logo.png.png" />
+        <p >Hab+Dash is a division of the filament 
+            technologies company, Fil-Tec, Inc. and 
+            is a proudU.S.A. manufacturer of sewing 
+            threads and pre-wound bobbins. Our 
+            wholesale site is dedicated to offering 
+            our manufactured products to commercial 
+            embroiderers, long-armquilters and retail 
+            sewing shops. In addition to the products 
+            we manufacture, we have sourced the best 
+            products and accessories to benefit our 
+            customers</p>
+            <div class="copyright">© 2024 Hab+Dash. All rights reserved.</div> 
+        </div>
+        <div class="support">
+            <div class="footerTitle">SUPPORT</div>
+            <a href="#stitch_rewards" >Stitch Rewards</a>
+            <a href="#stitch_rewards">Stitch Rewards</a>
+            <a href="#core_return_program">Core Return Program</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#terms_and_conditions">Terms and Conditions</a>
+            <a href="#online_dealers">Online Dealers</a>
+        </div>
+        <div class="support">
+            <div class="footerTitle">USEFUL LINKS</div>
+            <a href="#digital_color_card">Digital Color Card</a>
+            <a href="#which_bobbin_fits">Which Bobbin Fits?</a>
+            <a href="#color_conversion">Color Conversion</a>
+            <a href="#stabilizer_applications">Stabilizer Applications</a>
+            <a href="#selecting_a_stabilizer">Selecting a Stabilizer</a>
+            <a href="#new_site_features">New Site Features</a>
+            <a href="#institute_of_heraldry">Institute of Heraldry</a>
+            <a href="#kimberbell_solids">Kimberbell Solids</a>
+        </div>
+        <div class="support">
+            <div class="footerTitle">ABOUT US</div>
+            <a href="#our_story">Our Story</a>
+            <a href="#show_schedule">Show Schedule</a>
+            <a href="#testimonials">Testimonials</a>            
+        </div>
+        <div >
+            <div class="footerTitle">Newsletter Sign up</div>
+            <div class="neewsLeterDes">Subscribe our newsletter to unlock exclusive access to promotions, new product launches and more!</div>
+            <button class="footerButton">Subscribe</button>
+        </div>
+        </div>
+       
+       </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="./app.js" type="module"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          
+          const checkboxes = document.querySelectorAll('.menu-checkbox');
+          
+          
+          checkboxes.forEach(checkbox => {
+              checkbox.addEventListener('change', function() {
+                  
+                  if (this.checked) {
+                      checkboxes.forEach(otherCheckbox => {
+                          if (otherCheckbox !== this) {
+                              otherCheckbox.checked = false;
+                          }
+                      });
+                  }
+              });
+          });
+
+          
+          document.addEventListener('click', function(event) {
+              
+              const isClickInside = event.target.closest('.collapsCtn');
+              
+              if (!isClickInside) {
+                  checkboxes.forEach(checkbox => {
+                      checkbox.checked = false;
+                  });
+              }
+          });
+      });
+  </script>
+
+  </body>
+</html>
