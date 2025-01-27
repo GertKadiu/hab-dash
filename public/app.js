@@ -1,4 +1,4 @@
-import { carouselData } from "./data.js";
+import { carouselData } from "../data.js";
 
 const carouselItemsContainer = document.getElementById("carousel-items");
 const prevBtn = document.getElementById("prev-btn");
