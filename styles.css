@@ -1,0 +1,599 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Sans", serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-container {
+    display: none;
+  }
+  
+
+.banner {
+    background-color: rgb(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 20px 0;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.navbar{
+    background-color: #000000;
+}
+
+.navCtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 47px;
+    border-bottom: 0.5px solid #CCCCCC;
+    background-color: #FFFFFF;
+}
+
+.nav-left {
+   display: flex;
+   gap: 29.2px;
+   text-transform: uppercase;
+   font-size: 17px;
+   line-height: 19px;
+   color: #000000;
+   align-items: center;
+   font-weight: bold
+  }
+
+  .navCtn a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .nav-right {
+    display: flex;
+    gap: 29.2px;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 17px;
+    line-height: 28.3px;
+    color: #000000;
+    font-weight: bold
+   }
+
+   .imgCtnHeader{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+   }
+
+   .cart{
+    border-right: 1px solid #CCCCCC;
+    padding-right: 16px;
+   }
+
+   .secondHeader {
+    align-items: center;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+  .logoImgHeader{
+    width: 210px;
+    height: 67.19px;
+    padding: 33px 221px 20px 178px;
+  }
+  
+  .collapsCtn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 57px;
+    font-size: 17px;
+    line-height: 28.3px;
+    color: #000000;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .menu-checkbox {
+    display: none;
+  }
+  
+  .menu-label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-label .menu-icon {
+    margin-left: 6px;
+  }
+  
+  .menu-checkbox:checked ~ nav {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  nav a:hover {
+    background-color: #e0e0e0;
+  }
+
+.heroSection {
+    background-image: url('./Images/div.slick-list.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 130px;
+}
+
+.heroSectionTitle {
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: 66px;
+    letter-spacing: 0.25px;
+    max-width: 612px;
+    text-align: right;
+    margin: 0 0 49px 0;
+}
+
+.primaryButton {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: "Josefin Sans", serif;
+    padding: 16px 41px;
+    font-size: 20px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* ccarouselSectionnStyles */
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    width: 98%; 
+    margin: 0 auto; 
+    margin-bottom: 30px;
+  }
+
+.controllers {
+    display: flex;
+    justify-content: flex-end;
+    padding: 55px 70px 25px 0;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.carousel-items {
+    display: flex;
+    gap: 30px;
+    overflow: hidden; 
+    width: 100%;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(100% / 3); 
+    box-sizing: border-box;
+  }
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel-item-text {
+    line-height: 66px;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/* RetailLocator */
+
+.storeLocatorCnt {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+}
+
+.storeLocator, .map {
+    flex: 1 1 50%; 
+    box-sizing: border-box; 
+}
+
+.storeLocator {
+    background-color: #1e1d1d;
+    padding: 196px 173px;
+    width: 100%;
+}
+
+.map {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center; 
+}
+
+.title{
+    font-size: 35px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.description{
+    font-size: 47px;
+    line-height: 50px;
+    margin: 0;
+    padding: 21px 0 49px 0;
+    color: #FFFFFF;
+}
+
+.primarySmaller{
+    border: 1px solid #FFFFFF;
+    font-size: 16px;
+    line-height: 49px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: "Josefin Sans", serif;
+    padding: 0 23px;
+}
+
+/* featuredProducts */
+
+.featuredProducts{
+    padding: 76px 38px 66px 38px;
+}
+
+.featuredTitle{
+    font-size: 35px;
+    line-height: 66px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+.productCtn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageCtn{
+    box-shadow: 0 4px 4px 0 rgb(0,0 , 0, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImg {
+    width: 100%; 
+}
+
+.productName{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+}
+
+.featureImg{
+    width: 356px;
+     height: 395px;
+}
+
+
+/* Testimonials */
+.testimonials{
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 75px 0px 28px 0px; 
+    align-items: center;
+    
+}
+
+.testimonialsTitle{
+    font-size: 35px;
+    line-height: 66px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.testimonialsDescription{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-top: 22px;
+    width: 70%;
+}
+
+
+.testimonialName{
+    font-size: 18px;
+    line-height: 50px
+}
+
+.testimonialsControllers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonialImg{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.counter{
+    font-size: 16px;
+    line-height: 66px;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    background-color: rgb(255, 255, 255, 1);
+    padding: 43px 0 78px 0;
+    margin-top: 67px;
+    border-top: 1px solid rgba(229, 229, 229, 1);
+}
+
+.footerCtn{
+    width: 70%;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center; 
+}
+
+.footer > div {
+    text-align: left; 
+    
+}
+
+.footer  a {
+    font-size: 14px;
+    line-height: 21px;
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer  p {
+    font-size: 12px;
+    line-height: 19px;
+    color: #000000;
+    font-weight: 300;
+    width: 85%; 
+    margin-top: 15px;
+     margin-bottom: 28px;
+}
+
+.footerTitle{
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(0, 0, 0, 1);
+}
+
+.footerDescription{
+    font-size: 12px;
+    line-height: 19px;
+    color: rgb(0, 0, 0, 1);
+    font-weight: 300;
+    margin: 15px 26px 28px 0;
+}
+
+.support{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.neewsLeterDes{
+    margin-top: 10px;
+    margin-bottom: 14px;
+    line-height: 21px;
+    font-size: 14px;
+    color: #757575;
+}
+
+.footerButton{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: "Josefin Sans", serif;
+    background-color: rgb(0, 0, 0, 1);
+    border: none;
+    color: #FFFFFF;
+    padding: 13.5px 33px 14.5px 33px;
+    cursor: pointer;
+}
+
+.copyright{
+    color: #757575;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@media (max-width: 1200px) {
+    .logoImgHeader{
+        width: 210px;
+        height: 67.19px;
+        padding: 33px 100px 20px 47px;
+      }
+}
+
+
+/* Tablet */
+@media (max-width: 1025px) {
+    .navbar{
+        display: none;
+    }
+    .mobile-container {
+        width: 100%;
+        margin: auto;
+        background-color: #FFFFFF;
+        height: auto;
+        color: white;
+        border-radius: 10px;
+        display:block;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #FFFFFF;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        color: black;
+        padding: 16px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-transform: capitalize;
+      }
+      
+      .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: #FFFFFF;
+        color: black;
+      }
+    
+    .heroSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .heroSectionTitle {
+        text-align: center;
+        max-width: auto;
+        font-size: 48px;
+        line-height: 52px;
+    }
+    .carousel-item {
+        flex: 0 0 50%;
+      }
+    .productCtn{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footerCtn {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 25px; 
+        justify-items: left;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .banner {
+        padding: 20px 16px;
+        text-align: center;
+    }
+
+    .heroSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+        height: 80vh;
+    }
+
+    .heroSectionTitle {
+        text-align: center;
+        max-width: auto;
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .carousel-item {
+        flex: 0 0 100%;
+      }
+    .productCtn{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .storeLocator {
+        padding: 90px 32px;
+    }
+
+    .storeLocator, .map {
+        flex: 1 1 100%; 
+        box-sizing: border-box; 
+    }
+    .footerCtn{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+        justify-content: center; 
+        text-align: left; 
+    }
+    .featureImg{
+        width: 356px;
+         height: 395px;
+    }
+}
